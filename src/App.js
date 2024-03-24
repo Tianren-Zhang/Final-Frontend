@@ -5,8 +5,10 @@ import VisualizationBlock from './components/VisualizationBlock';
 
 function App() {
   return (
-    <div className='App'>
+    <div>
       <Nav />
+
+
       <Body />
       <VisualizationBlock information={1} />
     </div>
