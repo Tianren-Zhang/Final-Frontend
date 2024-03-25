@@ -8,7 +8,6 @@ function App() {
     <div>
       <Nav />
 
-
       <Body />
       <VisualizationBlock information={1} />
     </div>

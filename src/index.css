@@ -1,29 +1,40 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
+.shadow {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2),
+    0 4px 6px -2px rgba(0, 0, 0, 0.5); /* Example shadow, adjust as needed */
+}
+.big-radius {
+  border-radius: 20px;
+}
+.small-radius {
+  border-radius: 10px;
+}
 
 /* ---------------------- Navbar styles ---------------------- */
 
 /* Container */
 .nav-container {
-  /*min-height: 100vh; /* Full screen height */
-  background-color: #f7fafc; /* bg-gray-100 */
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 2rem; /* pt-8 */
+  padding: 10px 30px;
 }
 
 /* Navigation Bar */
 .navbar {
+  min-height: 80px; /* Full screen height */
   background-color: #ffffff; /* bg-white */
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Example shadow, adjust as needed */
-  border-radius: 0.5rem; /* rounded-lg */
-  margin-bottom: 1rem; /* mb-4 */
-  padding: 1rem 1.5rem; /* py-4 px-6 */
-  width: 100%;
-  max-width: 64rem; /* max-w-4xl */
+  padding: 10px 30px;
+  margin: 10px 25px ;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Icon and Application Name Container */
@@ -34,27 +45,24 @@
 
 /* Contact Us Button */
 .contact-us-button {
-  color: #1c64f2; /* text-blue-700 */
+  color: #000000; /* text-blue-700 */
   background-color: transparent;
-  border: 1px solid #3b82f6; /* border-blue-500 */
+  border: 1px solid #000000; /* border-blue-500 */
   padding: 0.5rem 1rem; /* py-2 px-4 */
-  border-top-left-radius: 0.25rem; /* rounded-l */
-  border-bottom-left-radius: 0.25rem;
+  margin: 10px 25px ;
   font-weight: 600; /* font-semibold */
 }
 
 .contact-us-button:hover {
-  background-color: #3b82f6; /* hover:bg-blue-500 */
+  background-color: #000000; /* hover:bg-blue-500 */
   color: #ffffff; /* hover:text-white */
 }
 
 /* Try It Now! Button */
 .try-it-button {
   color: #ffffff; /* text-white */
-  background-color: #3b82f6; /* bg-blue-500 */
+  background-color: #000000; /* bg-blue-500 */
   padding: 0.5rem 1rem; /* py-2 px-4 */
-  border-top-right-radius: 0.25rem; /* rounded-r */
-  border-bottom-right-radius: 0.25rem;
   font-weight: 700; /* font-bold */
 }
 
@@ -62,17 +70,24 @@
   background-color: #2563eb; /* hover:bg-blue-700 */
 }
 
-
 /* ---------------------- Body styles ---------------------- */
 /* Overall Container */
-.form-container {
-  background-color: #ffffff; /* bg-white */
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Adjust shadow as needed */
-  border-radius: 0.5rem; /* rounded-lg */
-  margin-bottom: 1rem; /* mb-4 */
-  padding: 2rem; /* p-8 */
+.form-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 30px;
+}
+.form {
+  min-height: 80px; 
+  background-color: #ffffff;
+  padding: 10px 30px;
+  margin: 10px 25px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
-  max-width: 64rem; /* max-w-4xl */
+  box-sizing: border-box;
 }
 
 /* Section Heading */
@@ -80,26 +95,27 @@
   color: #4a5568; /* text-gray-700 */
   font-size: 1.125rem; /* text-lg */
   font-weight: 600; /* font-semibold */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Input Fields */
 .input-field {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   width: 100%;
   background-color: #f7fafc; /* bg-gray-100 */
   color: #4a5568; /* text-gray-700 */
   border: 1px solid #d2d6dc; /* border-gray-300 */
-  border-radius: 0.375rem; /* rounded */
   padding: 0.75rem 1rem; /* py-3 px-4 */
   line-height: 1.25; /* leading-tight */
+  box-sizing: border-box;
 }
 
 .input-field:focus {
+  width: 100%;
   outline: none;
   background-color: #ffffff; /* focus:bg-white */
   border-color: #3182ce; /* focus:border-blue-500 */
+  box-sizing: border-box;
 }
 
 /* Submit Button */
@@ -108,7 +124,6 @@
   color: #ffffff; /* text-white */
   font-weight: 700; /* font-bold */
   padding: 0.5rem 1rem; /* py-2 px-4 */
-  border-radius: 0.375rem; /* rounded */
   cursor: pointer;
 }
 
@@ -120,6 +135,5 @@
   outline: none;
   box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); /* focus:shadow-outline */
 }
-
 
 /* ---------------------- Body styles ---------------------- */
