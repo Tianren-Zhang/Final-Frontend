@@ -1,24 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import iconImage from '../image/icon.png'
+import iconImage from '../image/icon.png';
 
 export default function Nav() {
   const scrollToContact = () => {
     const endSection = document.getElementById('end-section');
-    console.log(endSection); 
+    console.log(endSection);
     if (endSection) {
       endSection.scrollIntoView({ behavior: 'smooth' });
     } else {
       alert('End section not found');
     }
   };
-  
 
   return (
     <div className='nav-container'>
       <nav className='navbar shadow big-radius'>
         <div className='icon-container'>
-        <img src={iconImage} alt="Application Icon" className="icon-image" />
+          <Link to='/' className='link'>
+            <img
+              src={iconImage}
+              alt='Application Icon'
+              className='icon-image'
+            />
+          </Link>
+
           <span className='title'>Application Name</span>
         </div>
         <div>
