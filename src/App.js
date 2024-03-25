@@ -1,21 +1,23 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Body from './components/Body';
 import Nav from './components/Navbar';
-import VisualizationBlock from './components/VisualizationBlock';
+import Visualization from './components/Visualization';
 import EndSection from './components/EndSection';
 
 function App() {
   return (
-    <div>
-      <Nav />
+    <Router>
+      <div>
+        <Nav />
 
-      <Body />
-      <VisualizationBlock information={1} />
-      <VisualizationBlock information={2} />
-      <VisualizationBlock information={3} />
-      <VisualizationBlock information={4} />
-      <EndSection />
-    </div>
+        <Routes>
+          <Route path='/main' element={<Visualization information={1} />} />
+        </Routes>
+
+        <EndSection />
+      </div>
+    </Router>
   );
 }
 

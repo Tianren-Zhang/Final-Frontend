@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Nav() {
   return (
@@ -12,9 +13,11 @@ export default function Nav() {
           <button className='contact-us-button small-radius'>
             Contact Us
           </button>
-          <button className='try-it-button small-radius'>
-            Try it now!
-          </button>
+          <Link to="/main" className='link'>
+            <button className='try-it-button small-radius'>
+              Try it now!
+            </button>
+          </Link>
         </div>
       </nav>
     </div>

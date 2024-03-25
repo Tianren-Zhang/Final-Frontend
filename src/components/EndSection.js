@@ -5,15 +5,15 @@ export default function EndSection() {
     <footer className='end-section'>
       <div className='names-emails'>
         <div className='person'>
-          <h3>Name 1</h3>
-          <p>Email 1</p>
+          <h3>Tianren Zhang</h3>
+          <p>zhang.tianre@northeastern.edu</p>
         </div>
         <div className='person'>
-          <h3>Name 2</h3>
-          <p>Email 2</p>
+          <h3>Jiaxing He</h3>
+          <p>he.jiaxi@northeastern.edu</p>
         </div>
         <div className='person'>
-          <h3>Name 3</h3>
+          <h3>Charles Joseph</h3>
           <p>Email 3</p>
         </div>
       </div>
