@@ -197,9 +197,17 @@ body {
 .names-emails {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px; /* Adjust as needed */
+  margin-bottom: 0px;
+  font-family: 'YourFont', sans-serif;
 }
 
 .person {
-  margin: 0 10px; /* Adjust spacing between name-email pairs */
+  margin: 0 10px;
+  font-family: inherit;
+  font-weight: 520;
+}
+
+.copyright {
+  font-family: 'YourFont', sans-serif;
+  padding: 0px 0px;
 }
