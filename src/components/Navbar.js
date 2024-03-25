@@ -6,7 +6,7 @@ export default function Nav() {
       <nav className='navbar shadow big-radius'>
         <div className='icon-container'>
           <i className='fas fa-bookmark text-blue-500 mr-2'></i>
-          <span className='font-bold text-xl'>Application Name</span>
+          <span className='font-bold text-xl'>Application Name and Icon</span>
         </div>
         <div>
           <button className='contact-us-button small-radius'>

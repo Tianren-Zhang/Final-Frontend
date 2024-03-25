@@ -21,7 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 30px;
+  padding: 5px 30px;
 }
 
 /* Navigation Bar */
@@ -76,7 +76,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 30px;
+  padding: 5px 30px;
 }
 .form {
   min-height: 80px;
@@ -86,6 +86,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   width: 100%;
   box-sizing: border-box;
 }
@@ -105,7 +106,8 @@ body {
   background-color: #f7fafc;
   color: #4a5568;
   border: 1px solid #d2d6dc;
-  padding: 0.75rem 1rem;
+  padding: 10px 10px;
+  margin: 10px 0px;
   line-height: 1.25;
   box-sizing: border-box;
 }
@@ -118,12 +120,23 @@ body {
   box-sizing: border-box;
 }
 
+.button-container {
+  min-height: 20px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align children to the start on the cross axis */
+  width: 100%;
+  box-sizing: border-box;
+}
 /* Submit Button */
 .submit-button {
+  align-self: flex-end; /* This aligns the submit button to the end of the flex container on the cross axis */
   background-color: #3182ce;
   color: #ffffff;
   font-weight: 700;
-  padding: 0.5rem 1rem;
+  padding: 10px 20px;
+  margin: 0px 0px;
   cursor: pointer;
 }
 

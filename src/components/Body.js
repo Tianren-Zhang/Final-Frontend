@@ -5,7 +5,7 @@ export default function Body() {
     <div className='form-container'>
       <div className='form shadow big-radius'>
         <div className='mb-4'>
-          <h2 className='heading'>Please fill out the form below</h2>
+          <h2 className='heading'>Example instruction</h2>
         </div>
         <div className='mb-4'>
           <input
@@ -21,7 +21,7 @@ export default function Body() {
             placeholder='Please type the question!'
           />
         </div>
-        <div className='flex justify-end'>
+        <div className='button-container'>
           <button className='submit-button small-radius'>Submit</button>
         </div>
       </div>
