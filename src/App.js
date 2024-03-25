@@ -10,6 +10,9 @@ function App() {
 
       <Body />
       <VisualizationBlock information={1} />
+      <VisualizationBlock information={1} />
+      <VisualizationBlock information={1} />
+      <VisualizationBlock information={1} />
     </div>
   );
 }
