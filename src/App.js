@@ -4,6 +4,7 @@ import './App.css';
 import Nav from './components/Navbar';
 import Visualization from './components/Visualization';
 import EndSection from './components/EndSection';
+import HomePage from './components/homePage';
 
 function App() {
   return (
@@ -14,7 +15,9 @@ function App() {
         <Routes>
           <Route path='/main' element={<Visualization information={1} />} />
         </Routes>
-
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+        </Routes>
         <EndSection />
       </div>
     </Router>
