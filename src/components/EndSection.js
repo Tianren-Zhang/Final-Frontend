@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function EndSection() {
   return (
-    <footer className='end-section'>
+    <footer id='end-section' className='end-section'>
       <div className='names-emails'>
         <div className='person'>
           <h3>Tianren Zhang</h3>

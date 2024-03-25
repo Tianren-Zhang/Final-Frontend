@@ -6,6 +6,10 @@ body {
 
 .shadow {
   box-shadow: 1px 2px 8px 0px rgba(0, 0, 0, 0.34);
+  transition: box-shadow 0.3s ease;
+}
+.shadow:hover {
+  box-shadow: 1px 2px 8px 0px rgba(0, 0, 0, 1);
 }
 .big-radius {
   border-radius: 20px;
@@ -16,6 +20,21 @@ body {
 
 /* ---------------------- Navbar styles ---------------------- */
 
+.icon-container {
+  display: flex;
+  align-items: center;
+  padding: 5px 0px;
+}
+.icon-image {
+  max-width: 60px;
+  border-radius: 20px;
+  border: 2px solid rgb(0, 0, 0);
+}
+.title {
+  margin: 15px;
+  font-family: inherit;
+  font-weight: 520;
+}
 /* Container */
 .nav-container {
   display: flex;
@@ -35,13 +54,9 @@ body {
   align-items: center;
   width: 100%;
   box-sizing: border-box;
+  font-family: 'YourFont', sans-serif;
 }
 
-/* Icon and Application Name Container */
-.icon-container {
-  display: flex;
-  align-items: center;
-}
 
 /* Contact Us Button */
 .contact-us-button {
@@ -50,7 +65,8 @@ body {
   border: 1px solid #000000;
   padding: 0.5rem 1rem;
   margin: 10px 25px;
-  font-weight: 600;
+  font-weight: 700;
+  border: 2px solid rgb(0, 0, 0);
 }
 
 .contact-us-button:hover {
@@ -64,10 +80,12 @@ body {
   background-color: #000000;
   padding: 0.5rem 1rem;
   font-weight: 700;
+  border: 2px solid black;
 }
 
 .try-it-button:hover {
-  background-color: #2563eb;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 /* ---------------------- Body styles ---------------------- */
@@ -132,12 +150,13 @@ body {
 /* Submit Button */
 .submit-button {
   align-self: flex-end; /* This aligns the submit button to the end of the flex container on the cross axis */
-  background-color: #3182ce;
+  background-color: #000000;
   color: #ffffff;
   font-weight: 700;
   padding: 10px 20px;
   margin: 0px 0px;
   cursor: pointer;
+  border: 2px solid black;
 }
 
 .submit-button:hover {
