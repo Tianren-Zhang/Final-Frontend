@@ -26,8 +26,8 @@ body {
 
 /* Navigation Bar */
 .navbar {
-  min-height: 80px; /* Full screen height */
-  background-color: #ffffff; /* bg-white */
+  min-height: 80px;
+  background-color: #ffffff;
   padding: 10px 30px;
   margin: 10px 25px;
   display: flex;
@@ -45,29 +45,29 @@ body {
 
 /* Contact Us Button */
 .contact-us-button {
-  color: #000000; /* text-blue-700 */
+  color: #000000;
   background-color: transparent;
-  border: 1px solid #000000; /* border-blue-500 */
-  padding: 0.5rem 1rem; /* py-2 px-4 */
+  border: 1px solid #000000;
+  padding: 0.5rem 1rem;
   margin: 10px 25px;
-  font-weight: 600; /* font-semibold */
+  font-weight: 600;
 }
 
 .contact-us-button:hover {
-  background-color: #000000; /* hover:bg-blue-500 */
-  color: #ffffff; /* hover:text-white */
+  background-color: #000000;
+  color: #ffffff;
 }
 
 /* Try It Now! Button */
 .try-it-button {
-  color: #ffffff; /* text-white */
-  background-color: #000000; /* bg-blue-500 */
-  padding: 0.5rem 1rem; /* py-2 px-4 */
-  font-weight: 700; /* font-bold */
+  color: #ffffff;
+  background-color: #000000;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
 }
 
 .try-it-button:hover {
-  background-color: #2563eb; /* hover:bg-blue-700 */
+  background-color: #2563eb;
 }
 
 /* ---------------------- Body styles ---------------------- */
@@ -92,9 +92,9 @@ body {
 
 /* Section Heading */
 .heading {
-  color: #4a5568; /* text-gray-700 */
-  font-size: 1.125rem; /* text-lg */
-  font-weight: 600; /* font-semibold */
+  color: #4a5568;
+  font-size: 1.125rem;
+  font-weight: 600;
   width: 100%;
   box-sizing: border-box;
 }
@@ -102,38 +102,38 @@ body {
 /* Input Fields */
 .input-field {
   width: 100%;
-  background-color: #f7fafc; /* bg-gray-100 */
-  color: #4a5568; /* text-gray-700 */
-  border: 1px solid #d2d6dc; /* border-gray-300 */
-  padding: 0.75rem 1rem; /* py-3 px-4 */
-  line-height: 1.25; /* leading-tight */
+  background-color: #f7fafc;
+  color: #4a5568;
+  border: 1px solid #d2d6dc;
+  padding: 0.75rem 1rem;
+  line-height: 1.25;
   box-sizing: border-box;
 }
 
 .input-field:focus {
   width: 100%;
   outline: none;
-  background-color: #ffffff; /* focus:bg-white */
-  border-color: #3182ce; /* focus:border-blue-500 */
+  background-color: #ffffff;
+  border-color: #3182ce;
   box-sizing: border-box;
 }
 
 /* Submit Button */
 .submit-button {
-  background-color: #3182ce; /* bg-blue-500 */
-  color: #ffffff; /* text-white */
-  font-weight: 700; /* font-bold */
-  padding: 0.5rem 1rem; /* py-2 px-4 */
+  background-color: #3182ce;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
   cursor: pointer;
 }
 
 .submit-button:hover {
-  background-color: #2c5282; /* hover:bg-blue-700 */
+  background-color: #2c5282;
 }
 
 .submit-button:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); /* focus:shadow-outline */
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
 }
 
 /* ---------------------- block styles ---------------------- */
@@ -144,10 +144,10 @@ body {
   padding: 10px 30px;
 }
 .block {
-  min-height: 400px; /* Full screen height */
-  background-color: #ffffff; /* bg-white */
+  min-height: 400px;
+  background-color: #ffffff;
   padding: 10px 30px;
-  margin: 10px 25px;
+  margin: 5px 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
