@@ -71,6 +71,7 @@ body {
 .contact-us-button:hover {
   background-color: #000000;
   color: #ffffff;
+  transition: background-color 0.4s ease;
 }
 
 /* Try It Now! Button */
@@ -85,6 +86,7 @@ body {
 .try-it-button:hover {
   background-color: #ffffff;
   color: #000000;
+  transition: background-color 0.4s ease;
 }
 
 /* ---------------------- Body styles ---------------------- */
@@ -160,6 +162,7 @@ body {
 
 .submit-button:hover {
   background-color: #2c5282;
+  transition: background-color 0.4s ease;
 }
 
 .submit-button:focus {
