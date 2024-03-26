@@ -218,13 +218,14 @@ body {
 .image-block {
   display: flex;
   align-items: center;
-  background-color: #f0f0f0; /* Background color */
+  background-color: rgb(202, 199, 202); /* Background color */
   padding: 20px;
 }
 
 .image-wrapper {
   flex: 1; /* Takes up remaining space */
   margin-right: 20px; /* Margin between image and text */
+  
 }
 
 .text-wrapper {
@@ -233,5 +234,12 @@ body {
 
 .text-wrapper p {
   font-size: 16px;
-  color: #333; /* Text color */
+  color: rgb(51, 51, 51); /* Text color */
 }
+
+.custom-image {
+  width: 500px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+  /* Add any other styles as needed */
+}
+
