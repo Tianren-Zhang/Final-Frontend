@@ -4,7 +4,7 @@ import './App.css';
 import Nav from './components/Navbar';
 import Visualization from './components/Visualization';
 import EndSection from './components/EndSection';
-import HomePage from './components/homePage';
+import HomePage from './components/HomePage';
 
 function App() {
   return (

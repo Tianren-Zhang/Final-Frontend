@@ -1,6 +1,6 @@
 import React from 'react';
 import VisualizationBlock from './VisualizationBlock';
-import Body from './Body';
+import Body from './BodyForm';
 
 export default function Visualization() {
   return (
