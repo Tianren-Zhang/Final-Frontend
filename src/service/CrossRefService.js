@@ -1,5 +1,5 @@
-const fetchPaperData = async (query) => {
-  const url = `https://api.semanticscholar.org/graph/v1/paper/search?query=covid+vaccination&offset=100&limit=3`;
+const fetchPaperData = async (doi) => {
+  const url = `https://api.crossref.org/works/10.1109/${doi}`;
 
   try {
     const response = await fetch(url);

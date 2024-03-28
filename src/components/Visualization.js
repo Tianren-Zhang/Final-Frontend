@@ -7,8 +7,8 @@ export default function Visualization() {
   return (
     <div>
       <Body />
-      
-      <AuthorVisualizationBlock query="GlueGen" />
+
+      <AuthorVisualizationBlock doi="ICCV51070.2023.02110" />
 
       <VisualizationBlock information={2} />
       <VisualizationBlock information={3} />

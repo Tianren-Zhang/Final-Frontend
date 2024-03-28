@@ -244,3 +244,53 @@ body {
   height: auto;
   max-width: 100%;
 }
+
+.paper-info-block {
+  padding: 10px 30px;
+  margin: 10px 60px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+}
+
+.paper-info-block h2 {
+  margin-top: 0;
+}
+
+.paper-info-block ul {
+  padding-left: 20px;
+}
+
+.paper-info-block a {
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.paper-info-block a:hover {
+  text-decoration: underline;
+}
+
+.paper-info-block button {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.paper-info-block button:hover {
+  background-color: #0056b3;
+}
+
+.actions-row {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  flex-wrap: wrap; /* Allows items to wrap onto the next line */
+}
+
