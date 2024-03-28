@@ -11,32 +11,28 @@ export default function Visualization() {
   const [submitTrigger, setSubmitTrigger] = useState(false);
   const [fetchComplete, setFetchComplete] = useState(false);
 
-  const handleFormSubmit = (titleInput, questionInput) => {
+  const handleFormSubmit = (titleInput, questionInput, callback) => {
     setTitle(titleInput);
     setQuestion(questionInput);
-    setSubmitTrigger(true); 
+    setSubmitTrigger(true);
     setFetchComplete(false);
+  
+    fetchPaperDoiByTitle(titleInput)
+      .then((fetchedDoi) => {
+        setDoi(fetchedDoi);
+        setSubmitTrigger(false);
+        setFetchComplete(true);
+        callback(); // Reset isSubmitting in the Body component
+      })
+      .catch((error) => {
+        console.error('Error fetching DOI:', error);
+        setSubmitTrigger(false);
+        setFetchComplete(false);
+        callback(); // Reset isSubmitting in the Body component
+      });
   };
 
   console.log(title);
-  useEffect(() => {
-    if (submitTrigger && title) {
-      fetchPaperDoiByTitle(title)
-        .then((fetchedDoi) => {
-          setDoi(fetchedDoi);
-          
-          setSubmitTrigger(false);
-          setFetchComplete(true);
-        })
-        .catch((error) => {
-          console.error('Error fetching DOI:', error);
-          
-          setSubmitTrigger(false);
-          setFetchComplete(false);
-        });
-    }
-  }, [submitTrigger]); 
-
   console.log(doi);
   return (
     <div>
