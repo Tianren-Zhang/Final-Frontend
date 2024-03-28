@@ -7,7 +7,8 @@ export default function Visualization() {
   return (
     <div>
       <Body />
-      <AuthorVisualizationBlock query="Computers And Intractability A Guide To The Theory Of Np Completeness" />
+      
+      <AuthorVisualizationBlock query="GlueGen" />
 
       <VisualizationBlock information={2} />
       <VisualizationBlock information={3} />

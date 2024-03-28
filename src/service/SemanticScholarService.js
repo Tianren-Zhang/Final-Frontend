@@ -1,8 +1,7 @@
-// src/services/SemanticScholarService.js
-
 const fetchPaperData = async (query) => {
-    const url = `https://api.semanticscholar.org/graph/v1/paper/autocomplete?query=${encodeURIComponent(query)}`;
-    
+    const url = `https://api.semanticscholar.org/graph/v1/paper/search?query=covid+vaccination&offset=100&limit=3`;
+
+
     try {
       const response = await fetch(url);
       if (!response.ok) throw new Error('Network response was not ok');
