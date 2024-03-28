@@ -27,11 +27,23 @@ export default function AuthorVisualizationBlock({ doi }) {
   console.log(paperData);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return (
+      <div className='block-container'>
+        <div className='block big-radius shadow'>
+          <p>Loading...</p>
+        </div>
+      </div>
+    );
   }
 
-  if (error || !paperData) {
-    return <p>Error: {error || 'No data available.'}</p>;
+  if (error || !paperData || paperData.error) {
+    return (
+      <div className='block-container'>
+        <div className='block big-radius shadow'>
+          <p>Error: {error || 'No data available.'}</p>
+        </div>
+      </div>
+    );
   }
 
   const { message } = paperData;

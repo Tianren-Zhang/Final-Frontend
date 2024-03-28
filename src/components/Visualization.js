@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import AuthorVisualizationBlock from './AuthorVisualizationBlock';
+import AuthorVisualizationBlock from './PaperInfoBlock';
 import VisualizationBlock from './VisualizationBlock';
 import Body from './BodyForm';
 import { fetchPaperDoiByTitle } from '../service/CrossRefService';
