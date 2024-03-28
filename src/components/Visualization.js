@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import AuthorVisualizationBlock from './PaperInfoBlock';
+import PaperInfoBlock from './PaperInfoBlock';
 import VisualizationBlock from './VisualizationBlock';
 import Body from './BodyForm';
 import { fetchPaperDoiByTitle } from '../service/CrossRefService';
@@ -42,7 +42,7 @@ export default function Visualization() {
     <div>
       <Body onFormSubmit={handleFormSubmit} />
 
-      {fetchComplete && doi && <AuthorVisualizationBlock doi={doi} />}
+      {fetchComplete && doi && <PaperInfoBlock doi={doi} />}
 
       <VisualizationBlock information={2} />
       <VisualizationBlock information={3} />
