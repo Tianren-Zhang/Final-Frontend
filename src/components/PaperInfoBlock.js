@@ -70,7 +70,7 @@ export default function AuthorVisualizationBlock({ doi }) {
             {message.author && (
               <>
                 <h3>Authors:</h3>
-                <ul>
+                <ul className='author-list'>
                   {message.author.map((author, index) => (
                     <li key={index}>
                       {author.given} {author.family} -{' '}

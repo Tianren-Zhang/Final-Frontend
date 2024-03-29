@@ -305,6 +305,12 @@ body {
   /* If you want one column to be wider, you can set specific flex values or widths */
 }
 
+.author-list {
+  max-height: 200px; /* Adjust based on your layout needs */
+  overflow-y: auto; /* Enables vertical scrolling */
+  padding: 0px 0px;
+}
+
 .actions-row {
   display: flex;
   align-items: center;
@@ -314,3 +320,8 @@ body {
 }
 
 
+.references-container {
+  max-height: 300px; /* Adjust based on your layout needs */
+  overflow-y: auto; /* Enables vertical scrolling */
+  padding: 0px 0px;
+}
