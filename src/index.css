@@ -245,6 +245,7 @@ body {
   max-width: 100%;
 }
 
+/* ---------------------- Paper Info section styles ---------------------- */
 .paper-info-block {
   padding: 10px 30px;
   margin: 10px 60px;
@@ -286,11 +287,30 @@ body {
   background-color: #0056b3;
 }
 
+.body-info-container {
+  display: flex;
+  justify-content: space-between; /* Adjust this as needed */
+  gap: 20px; /* Space between columns */
+}
+
+.body-infoPage {
+  display: flex; /* Makes it a flex container */
+  justify-content: space-between; /* Spaces out the child elements */
+  align-items: flex-start; /* Aligns items to the top */
+  gap: 20px; /* Adjust gap between columns as needed */
+}
+
+.left-infoPage, .right-infoPage {
+  flex: 1; /* Both children take up equal space; you can adjust this as needed */
+  /* If you want one column to be wider, you can set specific flex values or widths */
+}
+
 .actions-row {
   display: flex;
   align-items: center;
   justify-content: start;
   gap: 10px;
-  flex-wrap: wrap; /* Allows items to wrap onto the next line */
+  flex-wrap: wrap;
 }
+
 
