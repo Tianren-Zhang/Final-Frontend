@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import PaperInfoBlock from './PaperInfoBlock';
 import VisualizationBlock from './VisualizationBlock';
-import Body from './BodyForm';
+import RecommendationBlock from './RecommendationBlock';
+import BodyForm from './BodyForm';
 import { fetchPaperDoiByTitle } from '../service/CrossRefService';
 
 export default function Visualization() {
@@ -22,13 +23,13 @@ export default function Visualization() {
         setDoi(fetchedDoi);
         setSubmitTrigger(false);
         setFetchComplete(true);
-        callback(); // Reset isSubmitting in the Body component
+        callback();
       })
       .catch((error) => {
         console.error('Error fetching DOI:', error);
         setSubmitTrigger(false);
         setFetchComplete(false);
-        callback(); // Reset isSubmitting in the Body component
+        callback();
       });
   };
 
@@ -36,10 +37,10 @@ export default function Visualization() {
   console.log(doi);
   return (
     <div>
-      <Body onFormSubmit={handleFormSubmit} />
+      <BodyForm onFormSubmit={handleFormSubmit} />
 
       {fetchComplete && doi && <PaperInfoBlock doi={doi} />}
-
+      <RecommendationBlock />
       <VisualizationBlock information={2} />
       <VisualizationBlock information={3} />
       <VisualizationBlock information={4} />

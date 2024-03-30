@@ -321,7 +321,7 @@ body {
 
 
 .references-container {
-  max-height: 300px; /* Adjust based on your layout needs */
+  max-height: 285px; /* Adjust based on your layout needs */
   overflow-y: auto; /* Enables vertical scrolling */
   padding: 0px 0px;
 }

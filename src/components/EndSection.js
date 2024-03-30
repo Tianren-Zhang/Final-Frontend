@@ -14,7 +14,7 @@ export default function EndSection() {
         </div>
         <div className='person'>
           <h3>Charles Joseph</h3>
-          <p>josep.charl@northeastern.edu</p>
+          <p>joseph.ch@northeastern.edu</p>
         </div>
       </div>
       <div className='icon'>

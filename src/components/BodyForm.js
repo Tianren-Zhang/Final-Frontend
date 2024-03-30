@@ -23,7 +23,7 @@ export default function Body({ onFormSubmit }) {
             placeholder='Please type the full title of the paper!'
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            disabled={isSubmitting} // Optional: Disable input fields while submitting
+            disabled={isSubmitting}
           />
         </div>
         <div className='mb-6'>
@@ -33,7 +33,7 @@ export default function Body({ onFormSubmit }) {
             placeholder='Please type the question!'
             value={question}
             onChange={(e) => setQuestion(e.target.value)}
-            disabled={isSubmitting} // Optional: Disable input fields while submitting
+            disabled={isSubmitting}
           />
         </div>
         <div className='button-container'>
