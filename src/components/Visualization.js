@@ -40,7 +40,7 @@ export default function Visualization() {
       <BodyForm onFormSubmit={handleFormSubmit} />
 
       {fetchComplete && doi && <PaperInfoBlock doi={doi} />}
-      <RecommendationBlock />
+      {fetchComplete && doi && <RecommendationBlock doi={doi}/>}
       <VisualizationBlock information={2} />
       <VisualizationBlock information={3} />
       <VisualizationBlock information={4} />
