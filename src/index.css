@@ -333,16 +333,16 @@ body {
 /* ---------------------- Recom section styles ---------------------- */
 .recommendation-block {
   background-color: #ffffff;
-  min-height: 400px;
+  min-height: 600px;
   padding: 10px 30px;
   margin: 5px 25px;
   width: 100%;
-  max-height: 400px;
+  max-height: 600px;
 
   box-sizing: border-box;
 }
 .recommendation-paper {
-  max-height: 310px;
+  max-height: 530px;
   margin-top: 0px;
   overflow-y: auto;
   scroll-behavior: smooth;
@@ -367,5 +367,45 @@ body {
 }
 
 .recommendation-block li p {
+  margin: 5px 0;
+}
+
+/* ---------------------- Author paper section styles ---------------------- */
+.author-info-block {
+  background-color: #ffffff;
+  min-height: 600px;
+  padding: 10px 30px;
+  margin: 5px 25px;
+  width: 100%;
+  max-height: 600px;
+
+  box-sizing: border-box;
+}
+.author-paper-block {
+  max-height: 530px;
+  margin-top: 0px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+.author-info-block h3 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.author-info-block ul {
+  list-style: none;
+  padding: 0;
+}
+
+.author-info-block li {
+  margin-bottom: 20px;
+}
+
+.author-info-block li a {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.author-info-block li p {
   margin: 5px 0;
 }
