@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { fetchPaperData } from '../service/CrossRefService';
 
-export default function AuthorVisualizationBlock({ doi }) {
+export default function PaperInfoBlock({ doi, onMainAuthorId }) {
   const [paperData, setPaperData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -15,6 +15,10 @@ export default function AuthorVisualizationBlock({ doi }) {
         .then((data) => {
           setPaperData(data);
           setLoading(false);
+          if (data && data.authors && data.authors.length > 0) {
+            const mainAuthorId = data.authors[0].authorId;
+            onMainAuthorId(mainAuthorId);
+          }
         })
         .catch((error) => {
           console.error('Failed to fetch data:', error);

@@ -10,37 +10,46 @@ export default function Visualization() {
   const [question, setQuestion] = useState('');
   const [doi, setDoi] = useState('');
   const [submitTrigger, setSubmitTrigger] = useState(false);
-  const [fetchComplete, setFetchComplete] = useState(false);
+  const [fetchPaperComplete, setFetchPaperComplete] = useState(false);
+  const [mainAuthorId, setMainAuthorId] = useState('');
+  const [fetchAuthorComplete, setfetchAuthorComplete] = useState(false);
+
+  const handleMainAuthorId = (authorId) => {
+    setMainAuthorId(authorId);
+    setfetchAuthorComplete(true);
+  };
 
   const handleFormSubmit = (titleInput, questionInput, callback) => {
     setTitle(titleInput);
     setQuestion(questionInput);
     setSubmitTrigger(true);
-    setFetchComplete(false);
+    setFetchPaperComplete(false);
   
     fetchPaperDoiByTitle(titleInput)
       .then((fetchedDoi) => {
         setDoi(fetchedDoi);
         setSubmitTrigger(false);
-        setFetchComplete(true);
+        setFetchPaperComplete(true);
         callback();
       })
       .catch((error) => {
         console.error('Error fetching DOI:', error);
         setSubmitTrigger(false);
-        setFetchComplete(false);
+        setFetchPaperComplete(false);
         callback();
       });
   };
 
+
   console.log(title);
   console.log(doi);
+  console.log(mainAuthorId);
   return (
     <div>
       <BodyForm onFormSubmit={handleFormSubmit} />
 
-      {fetchComplete && doi && <PaperInfoBlock doi={doi} />}
-      {fetchComplete && doi && <RecommendationBlock doi={doi}/>}
+      {fetchPaperComplete && doi && <PaperInfoBlock doi={doi} onMainAuthorId={handleMainAuthorId} />}
+      {fetchPaperComplete && doi && <RecommendationBlock doi={doi}/>}
       <VisualizationBlock information={2} />
       <VisualizationBlock information={3} />
       <VisualizationBlock information={4} />
