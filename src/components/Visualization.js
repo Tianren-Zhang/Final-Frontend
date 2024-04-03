@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PaperInfoBlock from './PaperInfoBlock';
 import VisualizationBlock from './VisualizationBlock';
 import RecommendationBlock from './RecommendationBlock';
+import FetchAndVisualizeCitations from './BarVisualization';
 import AuthorBlock from './AuthorBlock';
 import BodyForm from './BodyForm';
 import { fetchPaperDoiByTitle } from '../service/CrossRefService';
@@ -43,16 +44,16 @@ export default function Visualization() {
 
   console.log(title);
   console.log(doi);
+
   return (
     <div>
       <BodyForm onFormSubmit={handleFormSubmit} />
 
       {fetchPaperComplete && doi && <PaperInfoBlock doi={doi} />}
-      {fetchPaperComplete && doi && <RecommendationBlock doi={doi} />}
       {fetchPaperComplete && doi && <AuthorBlock doi={doi} />}
-      <VisualizationBlock information={2} />
-      <VisualizationBlock information={3} />
-      <VisualizationBlock information={4} />
+      {fetchPaperComplete && doi && <RecommendationBlock doi={doi} />}
+      {fetchPaperComplete && doi && <FetchAndVisualizeCitations doi={doi} />}
+
     </div>
   );
 }

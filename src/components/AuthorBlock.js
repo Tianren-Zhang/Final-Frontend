@@ -54,10 +54,6 @@ export default function AuthorBlock({ doi }) {
                       >
                         {paper.title}
                       </a>
-                      <p>
-                        Authors:{' '}
-                        {paper.authors.map((author) => author.name).join(', ')}
-                      </p>
                       <p>{paper.abstract}</p>
                     </li>
                   ))}
