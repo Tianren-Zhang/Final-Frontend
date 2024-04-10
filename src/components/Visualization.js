@@ -5,6 +5,7 @@ import RecommendationBlock from './RecommendationBlock';
 import FetchAndVisualizeCitations from './BarVisualization';
 import AuthorBlock from './AuthorBlock';
 import BodyForm from './BodyForm';
+import RecommendationsNetwork from './RecommendationNetwork';
 import { fetchPaperDoiByTitle } from '../service/CrossRefService';
 
 export default function Visualization() {
@@ -52,9 +53,9 @@ export default function Visualization() {
       {fetchPaperComplete && doi && <PaperInfoBlock doi={doi} />}
       {fetchPaperComplete && doi && <AuthorBlock doi={doi} />}
       {fetchPaperComplete && doi && <RecommendationBlock doi={doi} />}
+      {fetchPaperComplete && doi && <RecommendationsNetwork doi={doi} title={title} />}
       {fetchPaperComplete && doi && <FetchAndVisualizeCitations doi={doi} />}
-
     </div>
   );
 }
-// ICCV51070.2023.02110
+// ICCV51070.2023.02110 RecommendationsNetwork
