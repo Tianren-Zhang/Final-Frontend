@@ -10,7 +10,7 @@ export default function GPTBlock({ inputText, title }) {
         setResponse(data);
       });
     }
-  }, [inputText]);
+  }, [inputText, title]);
 
   return (
     <div className='block-container'>

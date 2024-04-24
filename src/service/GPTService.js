@@ -3,7 +3,7 @@ import axios from 'axios';
 const getGPTAnswer = async (inputText, title) => {
   const config = {
     method: 'post',
-    url: 'https://localhost:5000/ask',
+    url: 'http://localhost:5000/ask',
     headers: {
       'Content-Type': 'application/json',
     },
