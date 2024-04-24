@@ -25,7 +25,13 @@ export default function GPTBlock({ inputText, title }) {
         <h2>Question:</h2>
         <p>{inputText}</p>
         <h2>Answer:</h2>
-        {answerContent ? <p>{answerContent}</p> : <p>No answer available.</p>}
+        {answerContent ? (
+          <p style={{ maxHeight: '400px', overflowY: 'auto' }}>
+            {answerContent}
+          </p>
+        ) : (
+          <p>No answer available.</p>
+        )}
       </div>
     </div>
   );
