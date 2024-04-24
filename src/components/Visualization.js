@@ -5,6 +5,7 @@ import RecommendationBlock from './RecommendationBlock';
 import FetchAndVisualizeCitations from './BarVisualization';
 import AuthorBlock from './AuthorBlock';
 import BodyForm from './BodyForm';
+import GPTBlock from './GPTBlock';
 import RecommendationsNetwork from './RecommendationNetwork';
 import { fetchPaperDoiByTitle } from '../service/CrossRefService';
 
@@ -55,6 +56,7 @@ export default function Visualization() {
       {fetchPaperComplete && doi && <RecommendationBlock doi={doi} />}
       {fetchPaperComplete && doi && <RecommendationsNetwork doi={doi} title={title} />}
       {fetchPaperComplete && doi && <FetchAndVisualizeCitations doi={doi} />}
+      {title && question && <GPTBlock inputText={question} title={title}/>}
     </div>
   );
 }

@@ -1,0 +1,26 @@
+import React, { useState, useEffect } from 'react';
+import { getGPTAnswer } from '../service/GPTService';
+
+export default function GPTBlock({ inputText, title }) {
+  const [response, setResponse] = useState('');
+
+  useEffect(() => {
+    if (inputText) {
+      getGPTAnswer(inputText, title).then((data) => {
+        setResponse(data);
+      });
+    }
+  }, [inputText]);
+
+  return (
+    <div className='block-container'>
+      <div className='author-info-block big-radius shadow'>
+        {' '}
+        <h2>Question:</h2>
+        <p>{inputText}</p>
+        <h2>Answer:</h2>
+        <p>{response}</p>
+      </div>
+    </div>
+  );
+}
