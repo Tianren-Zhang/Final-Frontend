@@ -11,15 +11,21 @@ export default function GPTBlock({ inputText, title }) {
       });
     }
   }, [inputText, title]);
+  console.log(response);
+  const answerContent =
+    response &&
+    response.choices &&
+    response.choices.length > 0 &&
+    response.choices[0].message &&
+    response.choices[0].message.content;
 
   return (
     <div className='block-container'>
       <div className='author-info-block big-radius shadow'>
-        {' '}
         <h2>Question:</h2>
         <p>{inputText}</p>
         <h2>Answer:</h2>
-        <p>{response}</p>
+        {answerContent ? <p>{answerContent}</p> : <p>No answer available.</p>}
       </div>
     </div>
   );

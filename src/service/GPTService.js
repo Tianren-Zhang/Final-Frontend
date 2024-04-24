@@ -8,7 +8,7 @@ const getGPTAnswer = async (inputText, title) => {
       'Content-Type': 'application/json',
     },
     data: {
-      input: `For the paper ${title}, could you search, and answer this question for me? ${inputText}`,
+      input: `For the paper ${title}, could you search, and answer this question for me? ${inputText}. Please tell me as much as possible!`,
     },
     timeout: 10000,
   };
