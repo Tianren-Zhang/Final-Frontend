@@ -7,7 +7,7 @@ const ImageBlock = ({ imageUrl }) => {
         <img src={imageUrl} alt='Image' className='custom-image' />
       </div>
       <div className='text-wrapper'>
-        <p>Ask questions and find similar papers with One Click</p>
+        <h1>Ask questions and find similar papers with One Click</h1>
       </div>
     </div>
   );

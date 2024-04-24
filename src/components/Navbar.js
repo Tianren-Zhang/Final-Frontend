@@ -25,7 +25,7 @@ export default function Nav() {
             />
           </Link>
 
-          <span className='title'>Application Name</span>
+          <span className='title'>TCJ Final</span>
         </div>
         <div>
           <button
